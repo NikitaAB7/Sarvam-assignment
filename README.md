@@ -1,6 +1,7 @@
 # Sarvam Audio Processing Pipeline
 
 An end-to-end audio processing pipeline for extracting, segmenting, normalizing, transcribing, and tagging speech audio from YouTube videos using Sarvam AI APIs.
+The dataset created from this has been uploaded on HuggingFace and is available at: https://huggingface.co/datasets/Nikita-B7/Motivational_speech_dataset-English_Marathi
 
 ## Features
 
@@ -36,13 +37,6 @@ pip install -r requirements.txt
 
 ```
 sarvam assignment/
-├── data/
-│   ├── raw/                    # Downloaded YouTube audio files
-│   ├── segments/               # Segmented audio clips
-│   ├── normalized/             # Loudness-normalized clips
-│   ├── segment_review.csv      # Quality review results
-│   ├── transcriptions.csv      # Transcription results
-│   └── transcriptions_tagged.csv # Emotion/style tagged results
 ├── segment_audio.py            # Audio segmentation script
 ├── review_segments.py          # Quality review system
 ├── transcribe.py               # Sarvam AI transcription
